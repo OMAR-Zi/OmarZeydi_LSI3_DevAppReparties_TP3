@@ -26,6 +26,13 @@ Multiple Java clients test:
 <img width="1322" height="202" alt="Capture d&#39;écran 2026-10-31 011556" src="https://github.com/user-attachments/assets/00b8e3e4-3796-42a2-88f0-144e95fc58bc" />
 <img width="1302" height="279" alt="Capture d&#39;écran 2026-10-31 011603" src="https://github.com/user-attachments/assets/5296fba2-5780-4d7e-9249-19ba99c50cae" />
 
+Activité2:
+
+Changes to ClientProcess: (synchronized so that only one thread can modify compterglobale at a time,static so that it becomes shared between processes)
+
+<img width="784" height="137" alt="Capture d&#39;écran 2026-10-31 013026" src="https://github.com/user-attachments/assets/7b387867-4ba0-45b9-b4c6-4480ad1a3d69" />
+<img width="645" height="60" alt="Capture d&#39;écran 2026-10-31 013646" src="https://github.com/user-attachments/assets/ad39b7eb-0bd2-414d-b70e-cb5bd2473185" />
+
 
 
 
