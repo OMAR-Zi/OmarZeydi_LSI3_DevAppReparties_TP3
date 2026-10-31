@@ -1,40 +1,33 @@
-# OmarZeydi_LSI3_DevAppReparties_TP2
+# OmarZeydi_LSI3_DevAppReparties_TP3
 Activité1:
-Changement sur la coté client: 
 
-<img width="660" height="525" alt="Capture d&#39;écran 2026-10-24 023617" src="https://github.com/user-attachments/assets/19f417bf-1687-4c94-b29e-c7af61c8338c" />
-<img width="539" height="146" alt="Capture d&#39;écran 2026-10-24 023628" src="https://github.com/user-attachments/assets/6f5424f7-bf2c-4bbe-8b1f-0c29c4a5a493" />
-Changement sur la coté serveur:
-<img width="583" height="530" alt="Capture d&#39;écran 2026-10-24 023639" src="https://github.com/user-attachments/assets/c21cdd0b-430d-4e58-8d87-5b072345f506" />
-<img width="456" height="230" alt="Capture d&#39;écran 2026-10-24 023644" src="https://github.com/user-attachments/assets/2833f357-a458-4c69-ba82-453e408ead6b" />
+Every ClientHandler sends the client' s unique number then processed with the calculations:
+<img width="794" height="583" alt="Capture d&#39;écran 2026-10-31 003723" src="https://github.com/user-attachments/assets/3dcd3a40-abea-40a8-9927-ab90b5a8f8c8" />
+<img width="951" height="192" alt="image" src="https://github.com/user-attachments/assets/af92226f-4dab-4f37-891a-9cd8e23e1847" />
 
--------Resultat-----------------------
+Le serveur écoute dans le Thread main et accept en definissant un ClientProcess :
+<img width="831" height="329" alt="image" src="https://github.com/user-attachments/assets/c2c9fc7b-443f-41a0-b28f-3b01591f506e" />
 
-<img width="567" height="494" alt="Capture d&#39;écran 2026-10-24 023714" src="https://github.com/user-attachments/assets/3dd581c6-cc81-41a0-a41f-4fb63ea90ee6" />
-<img width="655" height="146" alt="Capture d&#39;écran 2026-10-24 023723" src="https://github.com/user-attachments/assets/2820b650-77f6-423b-8ffd-23147c473185" />
-<img width="501" height="125" alt="Capture d&#39;écran 2026-10-24 023702" src="https://github.com/user-attachments/assets/2d29cbec-5453-449c-b650-487a6cd72f1f" />
+La coté Client reste pratiquement la meme.*
 
-Activité2:
+Telnet Feature activated:
 
-j'ajoute un package common contenant la class calcul qui implemente serializable et je l'importe dans les deux clases client et serveur:
-<img width="284" height="175" alt="Capture d&#39;écran 2026-10-24 043503" src="https://github.com/user-attachments/assets/2d3730da-dc3b-4589-ab14-ef42a14c2a22" />
-<img width="684" height="375" alt="Capture d&#39;écran 2026-10-24 043514" src="https://github.com/user-attachments/assets/3345659c-a8a1-494c-87b8-58b3db9f9c96" />
-<img width="222" height="54" alt="Capture d&#39;écran 2026-10-24 043528" src="https://github.com/user-attachments/assets/96eb3098-4ec7-4c20-b6e6-d30b08746bde" />
+<img width="264" height="62" alt="image" src="https://github.com/user-attachments/assets/3703958a-55c4-4dd1-94cd-f7aeee16635a" />
 
-On ajoute ObjectInputstream et ObjectOutputStream dans ce ordre dans les deux clases pour eviter un blocage (freeze) dont chacun attend l'autre.
+Telnet Test:
 
-<img width="626" height="76" alt="Capture d&#39;écran 2026-10-24 043538" src="https://github.com/user-attachments/assets/228e461e-85ed-4a49-91d0-39fd7edeae7b" />
+<img width="1365" height="713" alt="Capture d&#39;écran 2026-10-31 010331" src="https://github.com/user-attachments/assets/915d0102-f7c8-46c9-90f7-5612883f43e1" />
+<img width="1365" height="724" alt="Capture d&#39;écran 2026-10-31 010352" src="https://github.com/user-attachments/assets/f1759294-352f-4a57-a905-442fe6534c16" />
+<img width="353" height="26" alt="Capture d&#39;écran 2026-10-31 010405" src="https://github.com/user-attachments/assets/9374466e-9ea1-41bf-bdfb-61278ea0ff3f" />
 
-On utilise la classe calcul pour envoyer un object contenant x,y et op
+Multiple Java clients test:
 
-Client:
-<img width="674" height="328" alt="Capture d&#39;écran 2026-10-24 043625" src="https://github.com/user-attachments/assets/961ac1f4-89ba-4d5a-91e8-e8416e67a873" />
-<img width="617" height="499" alt="Capture d&#39;écran 2026-10-24 043639" src="https://github.com/user-attachments/assets/a2a9279e-df59-44df-af0d-268fa70ef291" />
+<img width="1276" height="237" alt="Capture d&#39;écran 2026-10-31 011550" src="https://github.com/user-attachments/assets/155cd07e-4356-446e-8e8b-be88d59fda73" />
+<img width="1322" height="202" alt="Capture d&#39;écran 2026-10-31 011556" src="https://github.com/user-attachments/assets/00b8e3e4-3796-42a2-88f0-144e95fc58bc" />
+<img width="1302" height="279" alt="Capture d&#39;écran 2026-10-31 011603" src="https://github.com/user-attachments/assets/5296fba2-5780-4d7e-9249-19ba99c50cae" />
 
-Serveur:
 
-<img width="445" height="554" alt="Capture d&#39;écran 2026-10-24 043547" src="https://github.com/user-attachments/assets/5e65e07c-048c-42ad-97e1-39ac1c76389e" />
-<img width="366" height="235" alt="Capture d&#39;écran 2026-10-24 043553" src="https://github.com/user-attachments/assets/073573d6-f912-4d2c-8d54-54e26d78ae20" />
+
 
 
 
